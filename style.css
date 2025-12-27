@@ -1,0 +1,407 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: black;
+    color: white;
+}
+.navbar{
+    height: 64px;
+    width: 100%;
+    /* margin-top: 10px;
+    margin-bottom: 10px; */
+    /* border: 2px white solid; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.logo img{
+    height: 32px;
+    width: 32px;
+    margin-left: 10px;
+    padding: 0 0.5rem;
+    cursor: pointer;
+}
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15rem;
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    background-color: #1f1f1f;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+.home:hover i{
+    color: #1DB954;
+    transform: scale(1.1);
+}
+
+.searchbar{
+    max-width: 480px;
+    width: 100%;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f1f1f;
+    border-radius: 2rem;
+    
+
+}
+.search-icon{
+    font-size: 21px;
+    width: 48px;
+    margin-left: 10px;
+    color: gray;
+
+}
+.search-box{
+    width: 430px;
+    margin-right: 2rem;
+    padding: 7px;
+}
+.search-boxinner{
+    color: white;
+    width: 100%;
+    /* height: 30px; */
+    background-color: #1f1f1f;
+    border: none;
+    font-size: 1.5rem;
+    padding: 10px;
+    outline: none;
+}
+.explore-install{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.explore{
+    background-color: white;
+    color:black;
+    font-weight: 800;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left:16px;
+    padding-right: 16px ;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    /* margin: 15px; */
+}
+.install{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: #b3b3b3;
+    padding-left: 16px;
+    padding-right: 36px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+.bell-icon,.user{
+    font-size: 16px;
+    height: 32px;
+    width: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    color: gray;
+}
+.account{
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    background-color:gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.account-inner{
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background-color: #19E86C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.home:hover,
+.explore:hover,
+.install:hover,
+.bell-icon:hover,
+.user:hover,
+.account:hover {
+    transform: scale(1.1);      
+    transition: all 0.2s ease;   
+}
+.install:hover,
+.bell-icon:hover,
+.user:hover{
+    color: white;
+}
+.main{
+    display: inline-flex;
+}
+.left{
+    width: 25vw;
+    background-color: #151515;
+    height: auto;
+    border-right: 2px black solid;
+    padding: 0.5rem; 
+    padding-bottom: 2rem;
+    padding-right: 10px;
+}
+.right{
+    width: 75vw;
+    background-color:#151515;
+    height: auto;
+    border-left: 2px black solid;
+    padding-bottom: 72px;
+    padding-left: 20px;
+}
+
+.library-header{
+    display: flex;
+    width: 100%;
+    height: 35px;
+    margin:1rem 0px 1rem 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+#library{
+    margin-left: 0.5rem;
+    font-size: 19px;
+    font-weight: 800;
+    cursor: pointer;
+}
+#create{
+    margin-left: 6rem;
+    background-color: #1F1F1F;
+    color: #ffffff;
+    border: none;
+    height: 35px;
+    font-size: 15px;
+    border-radius: 2rem;
+    width: 99px;
+    cursor: pointer;
+}
+.library-header i{
+    cursor: pointer;
+    margin-right: 0.5rem;
+    height: 35px;
+    width: 35px;
+    background-color: #1F1F1F;
+    color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    border-radius: 50%;
+}
+.left.expanded{
+    width: 100vw;
+}
+.row2 button{
+    background-color: #1F1F1F;
+    color: #ffffff;
+    border: none;
+    height: 32px;
+    font-size: 15px;
+    border-radius: 2rem;
+    width: 70px;
+    cursor: pointer;
+    margin: 1px;
+}
+.row3{
+    display: flex;
+    align-items: center;
+    color: gray;
+}
+.row3 p{
+    margin-left:17rem;
+    cursor: pointer;
+}
+.menu{
+    margin-left: 5px;
+    cursor: pointer;
+}
+.bottom{
+    width: 100vw;
+    height: 88px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    background-color: black;
+}
+/* visit once msg for myself */
+#myProgressBar{
+    width: 65vh;
+    height: 4px;
+    -webkit-appearance: none;
+    appearance: none;
+    background: #4d4d4d;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* thumb (the moving dot) */
+#myProgressBar::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 12px;
+    width: 12px;
+    background: #1DB954;
+    border-radius: 50%;
+}
+/* .icon{
+    display: 
+} */
+.card{
+    width: 250px;
+    background-color:#1F1F1F;
+    border-radius: 1rem;
+    margin: 5px;
+    position: relative;
+}
+.card-img{
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+}
+.card-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-text{
+    margin-top: 8px;
+}
+.card-text h2{
+    margin: 0;
+    font-size: 18px;
+}
+.card-text p{
+    margin-top: 4px;
+    font-size: 14px;
+    color: gray;
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.play{
+    font-size: 48px;
+    height: 48px;
+    width: 48px;
+    position: absolute;
+    left: 180px;
+    top: 190px;
+    color: #1DB954;
+    border-radius: 50%;
+    background-color: black;
+    opacity: 0;
+    display: flex;
+}
+.play.hovered{
+    opacity: 1;
+    transition: all 0.3s ease-out;
+    transform: scale(1.05);
+    cursor:pointer;
+}
+.card:hover{
+    cursor: pointer;
+}
+.songList ul{
+    padding:0 48px;
+}
+.songList ul li{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    cursor: pointer;
+    padding: 12px 0;
+    border: 1px solid rgba(146,143,143,0.491);
+    margin: 12px 0;
+    padding: 13px;
+    border-radius: 5px;
+}
+.songList .info1{
+    font-size: 13px;
+    width: 344px;
+    margin-left: 20px;
+}
+.info div{
+    word-break: break-all;
+}
+.songList i,
+.play-now{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.seekbar{
+    height: 4px;
+    width: 90%;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 15px;
+    margin: 6px;
+    cursor: pointer;
+}
+
+.circle{
+    width: 13px;
+    height: 13px;
+    border-radius: 13px;
+    background-color:#1DB954;
+    position: absolute;
+    /* bottom: 5px; */
+    left: 0%;
+    transition: left 0.5s;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.icon i{
+    cursor: pointer;
+}
+.song-info{
+    height: 20px;
+    /* width: 100px; */
+    color: white;
+    margin-right: auto;
+    margin-top: 14px;
+}
+.song-time{
+    align-self: baseline;
+    /* margin-left: auto; */
+    margin-right: auto;
+    color: white;
+    margin-top: auto;
+}
+.seek-fill{
+    height: 100%;
+    width: 0%;
+    background: #1DB954;
+    border-radius: 10px;
+}
